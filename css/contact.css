@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  font-family: "Dancing Script", cursive;
+}
+
+body {
+  font-family: "Dancing Script", cursive;
+  background: #eee;
+  color: #6e3300;
+}
+
+p {
+  margin-bottom: 12px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 16px;
+}
+
+a {
+  color: #6e3300;
+  text-decoration: none;
+}
+
+/* class  */
+
+.container {
+  display: block;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.title {
+  font-weight: 300;
+  font-size: 20px;
+  margin-bottom: 48px;
+}
+
+.bg-dark {
+  background: #333;
+  color: white;
+}
+
+/* header */
+
+.header-barre {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 16px 32px;
+  background: #ffebcd;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  line-height: 28px;
+}
+
+.header-logo {
+  margin-bottom: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.header-logo i {
+  color: #a09c8e;
+  font-size: 28px;
+  margin-right: 8px;
+}
+
+.header-logo a {
+  font-size: 48px;
+  font-weight: 300;
+}
+
+header ul {
+  display: flex;
+  flex-flow: row nowrap;
+  list-style: none;
+}
+
+header ul li {
+  padding: 16px;
+}
+
+header ul li a:hover {
+  color: #f1c40f;
+}
+
+header a {
+  color: #6e3300;
+}
+
+/* Formulaire */
+
+.contact {
+  padding: 40px 0px 40px 0px;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.container form label {
+  display: block;
+  font-weight: 700;
+}
+
+.container form input,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.container form textarea {
+  min-height: 80px;
+}
+
+.bouton {
+  display: inline-block;
+  font-size: 14px;
+  padding: 15px 25px;
+  border-radius: 30px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.btn-dark {
+  background: white;
+  color: #222;
+}
+
+.btn-dark:hover {
+  background: #222;
+  color: white;
+}
+
+/* footer */
+
+footer {
+  background: #ffebcd;
+  padding: 80px 16px;
+  color: #f1c40f;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 0;
+}
