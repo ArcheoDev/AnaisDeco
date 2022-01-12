@@ -1,0 +1,23 @@
+{
+  "name": "anaisdeco",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass":"sass -w scss:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArcheoDev/AnaisDeco.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArcheoDev/AnaisDeco/issues"
+  },
+  "homepage": "https://github.com/ArcheoDev/AnaisDeco#readme",
+  "dependencies": {
+    "sass": "^1.47.0"
+}
+}

@@ -31,7 +31,6 @@ a {
 }
 
 /* class  */
-
 .container {
   display: block;
   max-width: 1200px;
@@ -50,7 +49,6 @@ a {
 }
 
 /* header */
-
 .header-barre {
   min-height: 100vh;
   display: flex;
@@ -72,7 +70,6 @@ header {
   flex-flow: row nowrap;
   align-items: center;
 }
-
 .header-logo i {
   color: #a09c8e;
   font-size: 28px;
@@ -103,7 +100,6 @@ header a {
 }
 
 /* Formulaire */
-
 .contact {
   padding: 40px 0px 40px 0px;
   min-height: 100vh;
@@ -152,7 +148,6 @@ textarea {
 }
 
 /* footer */
-
 footer {
   background: #ffebcd;
   padding: 80px 16px;
@@ -163,3 +158,5 @@ footer {
 footer p {
   margin-bottom: 0;
 }
+
+/*# sourceMappingURL=contact.css.map */
