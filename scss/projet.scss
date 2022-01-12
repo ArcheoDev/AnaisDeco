@@ -1,3 +1,6 @@
+@import "variable";
+@import "keyframe";
+
 * {
   margin: 0;
   padding: 0;
@@ -5,13 +8,13 @@
 }
 
 header {
-  font-family: "Dancing Script", cursive;
+  font-family: $Font;
 }
 
 body {
-  font-family: "Dancing Script", cursive;
+  font-family: $Font;
   background: #eee;
-  color: #754f44;
+  color: $marronF;
 }
 
 h3 {
@@ -23,7 +26,7 @@ p {
 }
 
 a {
-  color: #754f44;
+  color: $marronF;
   text-decoration: none;
 }
 
@@ -41,6 +44,7 @@ em {
 }
 
 /* header */
+
 .header-barre {
   min-height: 100vh;
   display: flex;
@@ -92,12 +96,14 @@ header a {
   color: #6e3300;
 }
 
+// Inspirations
+
 .titre {
   padding-top: 40px;
   text-align: center;
 }
 
-.bloc-inspiration {
+.bloc-projet {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -106,50 +112,44 @@ header a {
   margin: 50px;
 }
 
-.carte-insp {
+.carte-projet {
   display: flex;
+  flex-direction: column;
+  //   border-radius: 20px;
   color: white;
   box-shadow: 0 0 16px #0000002e;
-  width: 40%;
+  width: 30%;
+  background-color: $vertC;
 }
 
-.couleur--1 {
-  background-color: #8a716a;
+.carte-projet:hover {
+  transform: scale(1.05);
 }
 
-.couleur--2 {
-  background-color: #754f44;
-}
-
-.couleur--3 {
-  background-color: #5b6c5d;
-}
-
-.couleur--4 {
-  background-color: #9bb291;
-}
-
-.img_insp {
+.img_projet {
   flex: 2 1;
   height: 320px;
 }
 
-.img_insp img {
+.img_projet img {
   height: 100%;
   width: 100%;
-  border-radius: 20px 0 0 20px;
+  // border-radius: 20px 0 0 20px;
   object-fit: cover;
   overflow: hidden;
 }
 
-.texte-insp {
+.texte-projet {
   flex: 2 1;
   display: flex;
   flex-direction: column;
+  padding: 10px;
   padding: 30px;
   text-align: center;
   margin: auto;
 }
+
+// footer
 
 footer {
   background: #ffebcd;
@@ -161,5 +161,3 @@ footer {
 footer p {
   margin-bottom: 0;
 }
-
-/*# sourceMappingURL=inspiration.css.map */

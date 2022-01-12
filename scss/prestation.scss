@@ -1,3 +1,6 @@
+@import "variable";
+@import "keyframe";
+
 * {
   margin: 0;
   padding: 0;
@@ -5,13 +8,13 @@
 }
 
 header {
-  font-family: "Dancing Script", cursive;
+  font-family: $Font;
 }
 
 body {
-  font-family: "Dancing Script", cursive;
+  font-family: $Font;
   background: #eee;
-  color: #754f44;
+  color: $marronF;
 }
 
 h3 {
@@ -23,7 +26,7 @@ p {
 }
 
 a {
-  color: #754f44;
+  color: $marronF;
   text-decoration: none;
 }
 
@@ -41,6 +44,7 @@ em {
 }
 
 /* header */
+
 .header-barre {
   min-height: 100vh;
   display: flex;
@@ -92,12 +96,14 @@ header a {
   color: #6e3300;
 }
 
+// Prestations
+
 .titre {
   padding-top: 40px;
   text-align: center;
 }
 
-.bloc-inspiration {
+.bloc-prestation {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -106,43 +112,44 @@ header a {
   margin: 50px;
 }
 
-.carte-insp {
+.carte-presta {
   display: flex;
+  //   border-radius: 20px;
   color: white;
   box-shadow: 0 0 16px #0000002e;
   width: 40%;
 }
 
 .couleur--1 {
-  background-color: #8a716a;
+  background-color: $marronC;
 }
 
 .couleur--2 {
-  background-color: #754f44;
+  background-color: $vertSauvage;
 }
 
 .couleur--3 {
-  background-color: #5b6c5d;
+  background-color: $marronF;
 }
 
-.couleur--4 {
-  background-color: #9bb291;
-}
+// .carte-insp:hover {
+//   transform: scale(1.05);
+//}
 
-.img_insp {
+.img_presta {
   flex: 2 1;
   height: 320px;
 }
 
-.img_insp img {
+.img_presta img {
   height: 100%;
   width: 100%;
-  border-radius: 20px 0 0 20px;
+  // border-radius: 20px 0 0 20px;
   object-fit: cover;
   overflow: hidden;
 }
 
-.texte-insp {
+.texte-presta {
   flex: 2 1;
   display: flex;
   flex-direction: column;
@@ -150,6 +157,35 @@ header a {
   text-align: center;
   margin: auto;
 }
+
+.carte-bouton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 320px;
+  width: 40%;
+}
+
+.bouton {
+  font-size: 30px;
+  padding: 15px 25px;
+  border-radius: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.btn-primaire {
+  background: white;
+  color: #222;
+}
+
+.btn-primaire:hover {
+  background: #222;
+  color: white;
+}
+
+// footer
 
 footer {
   background: #ffebcd;
@@ -161,5 +197,3 @@ footer {
 footer p {
   margin-bottom: 0;
 }
-
-/*# sourceMappingURL=inspiration.css.map */

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -159,7 +160,7 @@ header a {
   color: white;
 }
 
-/* Presentation */
+/* Présentation */
 .presentation {
   min-height: 100vh;
   display: flex;
@@ -183,6 +184,10 @@ header a {
 }
 
 /* Prestations */
+#prestation {
+  background: #9bb291;
+}
+
 .offre {
   padding: 160px 16px;
   max-width: 800px;
@@ -222,60 +227,6 @@ header a {
   background: #333;
 }
 
-/* .titre {
-          display: flex;
-        }
-
-        .prestations {
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          justify-content: space-between;
-          gap: 20px;
-        }
-
-        .offre-liste {
-          display: flex;
-          flex-direction: column;
-          flex-wrap: wrap;
-          background-color: white;
-          border-radius: 16px;
-          padding: 5px;
-          text-decoration: none;
-          color: black;
-          box-shadow: 0 0 16px #0000002e;
-          min-height: 180px;
-          width: 30%;
-        }
-
-        .offre-liste:hover {
-          transform: scale(1.05);
-        }
-
-        .img_presta {
-          width: 100%;
-        }
-
-        .img-presta img {
-          height: 50px;
-          width: 100%;
-          border-radius: 16px 16px 0 0;
-          object-fit: cover;
-        }
-
-        .offre-element-text {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          padding: 8px;
-          height: 10px;
-        }
-
-        .offre-element-text p {
-          margin: 0;
-          padding-left: 8px;
-          margin-bottom: 3px;
-        } */
 /* footer */
 footer {
   background: #ffebcd;
