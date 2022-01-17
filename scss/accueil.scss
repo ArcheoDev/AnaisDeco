@@ -179,6 +179,7 @@ header a {
 .presentation-texte {
   font-size: 20px;
   padding: 20px 40px 0 20px;
+  color: $noir;
 }
 
 .presentation-image img {
@@ -192,6 +193,7 @@ header a {
 
 #prestation {
   background: $vertSauvage;
+  min-height: 100vh;
 }
 
 .offre {
@@ -237,11 +239,45 @@ header a {
 
 footer {
   background: #ffebcd;
-  padding: 80px 16px;
+  // padding: 20px 16px;
   color: #f1c40f;
   text-align: center;
 }
 
+.footer-info {
+  display: flex;
+  flex: row;
+}
+
+.social {
+  max-width: 400px;
+  margin: auto auto auto auto;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  a {
+    text-decoration: none;
+    padding-bottom: 5px;
+  }
+  i {
+    width: 15px;
+  }
+}
+
+.logo-contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.fas {
+  font-size: 14px;
+  padding-right: 10px;
+}
+
 footer p {
   margin-bottom: 0;
+  padding-top: 20px;
+  font-size: 12px;
 }
