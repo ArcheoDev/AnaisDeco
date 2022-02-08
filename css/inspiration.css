@@ -9,13 +9,18 @@ header {
 }
 
 body {
-  font-family: "Dancing Script", cursive;
+  font-family: "Dosis", sans-serif;
   background: #eee;
   color: #754f44;
 }
 
 h3 {
   font-size: 40px;
+}
+
+h4 {
+  font-family: "Dosis", sans-serif;
+  font-size: 18px;
 }
 
 p {
@@ -29,11 +34,6 @@ a {
 
 ul {
   list-style: none;
-}
-
-strong {
-  color: #f1c40f;
-  font-weight: 400;
 }
 
 em {
@@ -82,6 +82,7 @@ header ul {
 
 header ul li {
   padding: 16px;
+  font-size: 26px;
 }
 
 header ul li a:hover {
@@ -89,12 +90,15 @@ header ul li a:hover {
 }
 
 header a {
-  color: #6e3300;
+  color: #754f44;
 }
 
 .titre {
   padding-top: 40px;
   text-align: center;
+  font-size: 50px;
+  color: #754f44;
+  font-family: "Dancing Script", cursive;
 }
 
 .bloc-inspiration {
@@ -149,17 +153,74 @@ header a {
   padding: 30px;
   text-align: center;
   margin: auto;
+  font-family: "Dancing Script", cursive;
 }
 
+/* footer */
 footer {
   background: #ffebcd;
-  padding: 80px 16px;
-  color: #f1c40f;
   text-align: center;
+}
+
+.footer-titre {
+  font-size: 35px;
+  font-family: "Dancing Script", cursive;
+  color: #754f44;
+}
+
+.footer-texte {
+  font-size: 20px;
+}
+
+.footer-info {
+  display: flex;
+  flex: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.social {
+  max-width: 400px;
+  margin: auto auto auto auto;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+}
+.footer-contact a {
+  text-decoration: none;
+  padding-bottom: 5px;
+  font-size: 20px;
+}
+.footer-contact i {
+  width: 15px;
+  padding-right: 28px;
+}
+
+.logo-contact {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.logo-reseau {
+  padding-top: 20px;
+}
+.logo-reseau .social {
+  padding: 10px;
+  font-size: 25px;
+}
+
+.fas {
+  font-size: 14px;
+  padding-right: 10px;
 }
 
 footer p {
   margin-bottom: 0;
+  padding-top: 20px;
+  font-size: 12px;
 }
 
 /*# sourceMappingURL=inspiration.css.map */

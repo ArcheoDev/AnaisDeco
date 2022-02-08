@@ -1,6 +1,3 @@
-@import "variable";
-@import "keyframe";
-
 * {
   margin: 0;
   padding: 0;
@@ -8,29 +5,32 @@
 }
 
 header {
-  font-family: $font1;
+  font-family: "Dancing Script", cursive;
 }
 
 body {
-  font-family: $font;
+  font-family: "Dosis", sans-serif;
   background: #eee;
-  color: $marronF;
-}
-
-h3 {
-  font-size: 40px;
-}
-
-h4 {
-  font-size: 18px;
+  color: #754f44;
 }
 
 p {
   margin-bottom: 12px;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-family: "Dancing Script", cursive;
+}
+
 a {
-  color: $marronF;
+  color: #754f44;
   text-decoration: none;
 }
 
@@ -42,8 +42,25 @@ em {
   color: #555;
 }
 
-/* header */
+/* class  */
+.container {
+  display: block;
+  max-width: 1200px;
+  margin: auto;
+}
 
+.title {
+  font-weight: 300;
+  font-size: 20px;
+  margin-bottom: 48px;
+}
+
+.bg-dark {
+  background: #333;
+  color: white;
+}
+
+/* header */
 .header-barre {
   min-height: 100vh;
   display: flex;
@@ -89,84 +106,29 @@ header ul li {
 }
 
 header ul li a:hover {
-  color: $jaune;
+  color: #f1c40f;
 }
 
 header a {
-  color: $marronF;
-}
-// Inspirations
-
-.titre {
-  padding-top: 40px;
-  text-align: center;
-  font-size: 50px;
-  color: $marronF;
-  font-family: $font1;
+  color: #754f44;
 }
 
-.bloc-projet {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  margin: 50px;
-}
-
-.carte-projet {
-  display: flex;
-  flex-direction: column;
-  //   border-radius: 20px;
-  color: white;
-  box-shadow: 0 0 16px #0000002e;
-  width: 30%;
-  background-color: $vertC;
-}
-
-.carte-projet:hover {
-  transform: scale(1.05);
-}
-
-.img_projet {
-  flex: 1 0;
-  height: 320px;
-}
-
-.img_projet img {
-  height: 60%;
-  width: 100%;
-  object-fit: cover;
-  overflow: hidden;
-}
-
-.texte-projet {
-  flex: 0 1;
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  padding: 30px;
-  text-align: center;
-  margin: auto;
-}
-
-// footer
-
+/* footer */
 footer {
   background: #ffebcd;
-  // padding: 20px 16px;
   text-align: center;
 }
 
 .footer-titre {
   font-size: 35px;
-  font-family: $font1;
-  color: $marronF;
+  font-family: "Dancing Script", cursive;
+  color: #754f44;
 }
 
 .footer-texte {
   font-size: 20px;
 }
+
 .footer-info {
   display: flex;
   flex: row;
@@ -182,15 +144,15 @@ footer {
 .footer-contact {
   display: flex;
   flex-direction: column;
-  a {
-    text-decoration: none;
-    padding-bottom: 5px;
-    font-size: 20px;
-  }
-  i {
-    width: 15px;
-    padding-right: 28px;
-  }
+}
+.footer-contact a {
+  text-decoration: none;
+  padding-bottom: 5px;
+  font-size: 20px;
+}
+.footer-contact i {
+  width: 15px;
+  padding-right: 28px;
 }
 
 .logo-contact {
@@ -201,10 +163,10 @@ footer {
 
 .logo-reseau {
   padding-top: 20px;
-  .social {
-    padding: 10px;
-    font-size: 25px;
-  }
+}
+.logo-reseau .social {
+  padding: 10px;
+  font-size: 25px;
 }
 
 .fas {
@@ -217,3 +179,5 @@ footer p {
   padding-top: 20px;
   font-size: 12px;
 }
+
+/*# sourceMappingURL=projet-exemple.css.map */
