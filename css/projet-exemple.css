@@ -69,7 +69,8 @@ em {
 
 header {
   padding: 16px 32px;
-  background: #ffebcd;
+  background: white;
+  opacity: 0.5;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -113,10 +114,33 @@ header a {
   color: #754f44;
 }
 
-/* footer */
-footer {
-  background: #ffebcd;
+.h1 {
   text-align: center;
+  font-size: 40px;
+  margin: 50px 0;
+}
+
+.grille {
+  max-width: 1300px;
+  width: 80%;
+  height: auto;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 250px);
+  justify-content: center;
+  grid-gap: 10px;
+}
+
+.grid-item {
+  width: 250px;
+  height: 200px;
+  background: #1e1e24;
+}
+
+footer {
+  background: white;
+  text-align: center;
+  opacity: 0.8;
 }
 
 .footer-titre {

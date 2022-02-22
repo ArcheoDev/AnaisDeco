@@ -48,7 +48,8 @@ em {
 
 header {
   padding: 16px 32px;
-  background: #ffebcd;
+  background: white;
+  opacity: 0.5;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -177,8 +178,9 @@ header a {
 }
 
 footer {
-  background: #ffebcd;
+  background: white;
   text-align: center;
+  opacity: 0.8;
 }
 
 .footer-titre {

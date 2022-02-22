@@ -16,6 +16,13 @@
       crossorigin="anonymous"
     ></script>
     <title>Anaïs Augias - Décoration d'intérieur | Projet Mariage H&A </title>
+    <style type="text/css">
+      body {
+        background-image: url(images/img-fond-page-int.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+    </style>
   </head>
   <body>
 
