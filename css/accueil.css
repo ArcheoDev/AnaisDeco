@@ -61,7 +61,6 @@ em {
   color: white;
 }
 
-/* header */
 .header-barre {
   min-height: 100vh;
   display: flex;
@@ -70,7 +69,8 @@ em {
 
 header {
   padding: 16px 32px;
-  background: #ffebcd;
+  background: white;
+  opacity: 0.5;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -124,7 +124,7 @@ header a {
 .accroche-texte {
   max-width: 800px;
   text-align: center;
-  color: #1e1e24;
+  color: white;
   padding: 30px;
 }
 
@@ -144,13 +144,16 @@ header a {
 .bouton {
   display: inline-block;
   font-size: 18px;
-  padding: 25px 35px;
+  padding: 15px 35px;
   border-radius: 40px;
   font-weight: 700;
+  margin: 10px;
+  margin-top: 30px;
 }
 
 .btn-primaire {
   background: white;
+  opacity: 0.6;
   color: #222;
 }
 
@@ -194,12 +197,12 @@ header a {
 .presentation-texte {
   font-size: 20px;
   padding: 20px 40px 0 20px;
-  color: #1e1e24;
+  color: white;
   font-size: 25px;
 }
 .presentation-texte h2 {
   font-size: 50px;
-  color: #754f44;
+  color: #1e1e24;
 }
 
 .presentation-image img {
@@ -212,7 +215,6 @@ header a {
 
 /* Prestations */
 #prestation {
-  background: #9bb291;
   min-height: 100vh;
 }
 
@@ -229,6 +231,8 @@ header a {
 .titre {
   padding-top: 40px;
   font-size: 50px;
+  color: #1e1e24;
+  text-align: center;
 }
 
 .offre-liste {
@@ -265,8 +269,9 @@ header a {
 
 /* footer */
 footer {
-  background: #ffebcd;
+  background: white;
   text-align: center;
+  opacity: 0.8;
 }
 
 .footer-titre {

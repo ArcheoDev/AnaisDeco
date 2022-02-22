@@ -64,7 +64,7 @@ em {
   color: white;
 }
 
-/* header */
+// header
 
 .header-barre {
   min-height: 100vh;
@@ -74,7 +74,8 @@ em {
 
 header {
   padding: 16px 32px;
-  background: #ffebcd;
+  background: white;
+  opacity: 0.5;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -123,15 +124,12 @@ header a {
   display: flex;
   justify-content: center;
   align-items: center;
-  // background: url(../images/body-fond1.jpg) center center;
-  // background-repeat: no-repeat;
-  // background-size: 100%;
 }
 
 .accroche-texte {
   max-width: 800px;
   text-align: center;
-  color: $noir;
+  color: white;
   padding: 30px;
 }
 
@@ -151,13 +149,16 @@ header a {
 .bouton {
   display: inline-block;
   font-size: 18px;
-  padding: 25px 35px;
+  padding: 15px 35px;
   border-radius: 40px;
   font-weight: 700;
+  margin: 10px;
+  margin-top: 30px;
 }
 
 .btn-primaire {
   background: white;
+  opacity: 0.6;
   color: #222;
 }
 
@@ -201,11 +202,11 @@ header a {
 .presentation-texte {
   font-size: 20px;
   padding: 20px 40px 0 20px;
-  color: $noir;
+  color: white;
   font-size: 25px;
   h2 {
     font-size: 50px;
-    color: $marronF;
+    color: $noir;
   }
 }
 
@@ -220,7 +221,6 @@ header a {
 /* Prestations */
 
 #prestation {
-  background: $vertSauvage;
   min-height: 100vh;
 }
 
@@ -237,6 +237,8 @@ header a {
 .titre {
   padding-top: 40px;
   font-size: 50px;
+  color: $noir;
+  text-align: center;
 }
 
 .offre-liste {
@@ -274,9 +276,9 @@ header a {
 /* footer */
 
 footer {
-  background: #ffebcd;
-  // padding: 20px 16px;
+  background: white;
   text-align: center;
+  opacity: 0.8;
 }
 
 .footer-titre {
