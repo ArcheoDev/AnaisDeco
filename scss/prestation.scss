@@ -15,8 +15,8 @@ body {
   font-family: $font;
   background: #eee;
   color: $marronF;
+  // max-width: 1400px;
 }
-
 h3 {
   font-size: 40px;
 }
@@ -169,14 +169,17 @@ header a {
 
 .bouton {
   display: inline-block;
-  font-size: 30px;
-  padding: 25px 35px;
+  font-size: 25px;
+  padding: 25px 45px;
   border-radius: 40px;
   font-weight: 700;
+  margin: 10px;
+  margin-top: 30px;
 }
 
 .btn-primaire {
   background: white;
+  opacity: 0.6;
   color: #222;
 }
 
