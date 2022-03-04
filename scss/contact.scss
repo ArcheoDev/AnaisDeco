@@ -119,9 +119,37 @@ header a {
   margin: auto;
 }
 
+.container form h1 {
+  font-size: 30px;
+  color: $noir;
+  padding-bottom: 30px;
+}
+
 .container form label {
   display: block;
   font-weight: 700;
+}
+
+.cac {
+  padding-bottom: 30px;
+}
+
+.cac li {
+  list-style-type: none;
+  padding-left: 25px;
+}
+
+.cac p {
+  font-weight: 700;
+  color: $noir;
+  font-size: 25px;
+}
+
+.cac label {
+  font-weight: 700;
+  color: $noir;
+  font-size: 18px;
+  padding-left: 20px;
 }
 
 .container form input,
@@ -134,7 +162,7 @@ textarea {
 }
 
 .container form textarea {
-  min-height: 80px;
+  min-height: 100px;
 }
 
 .bouton {

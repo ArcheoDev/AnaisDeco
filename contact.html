@@ -48,15 +48,6 @@
             <form action="#">
                 <h1>Une question ? Contactez-nous</h1>
 
-
-                <!-- Prestation concerné
-                Conseil-optimisation
-                Décoration
-                Aménagement
-                Home staging
-                Shopping 
-                    Cases à cocher-->
-
                 <label class="my-20" for="name">Prénom et nom</label>
                 <input type="text" name="name" id="name"/>
                 <br>
@@ -66,12 +57,39 @@
                 <label class="my-20" for="telephone">Téléphone (si vous souhaitez être appelé)</label>
                 <input type="telephone" name="telephone" id="telephone"/>
                 <br>
+            </form>
+
+              <div class="cac">
+               <p>Prestation(s) concernée(s)</p>
+                <li>
+                  <input type="checkbox" id="conseil-optimisation" name="Conseil-optimisation">
+                  <label for="Conseil-optimisation">Conseil optimisation</label>
+                </li>
+                <li>              
+                  <input type="checkbox" id="Décoration" name="Décoration">
+                  <label for="Décoration">Décoration</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="Aménagement" name="Aménagement">
+                  <label for="Aménagement">Aménagement</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="Home staging" name="Home-staging">
+                  <label for="Home-staging">Home staging</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="Shopping" name="Shopping">
+                  <label for="Shopping">Shopping</label>       
+                </ul>    
+              </div>     
+            
+              <form action="#">
                 <label class="my-20" for="question">Redigez votre message...</label>
                 <textarea name="question" id="question"></textarea>
                 <br>
                 <button class="bouton btn-primaire">SOUMETTRE</button>
                 <!-- <a href="mailto:helene.labit@gmail.com">Ecrivez-moi</a>     -->
-            </form>
+              </form>
         </div>
     </section>
 
