@@ -206,6 +206,7 @@ header a {
   border-radius: 250px;
   border: 2px solid #8a716a;
   text-align: center;
+  align-items: center;
   width: 350px;
   height: 350px;
   object-fit: cover;
@@ -369,9 +370,16 @@ footer p {
     order: 2;
   }
 
+  .img-infl {
+    margin: 2px;
+    padding-left: 2px;
+  }
+
   .img-infl img {
-    padding-top: 20px;
-    height: 300px;
+    padding: 0;
+    height: 250px;
+    max-width: 70%;
+    margin: 10px;
   }
 
   #presentation {
@@ -384,6 +392,12 @@ footer p {
 
   .presentation-image {
     order: 1;
+  }
+
+  .presentation-image img {
+    width: 300px;
+    height: 300px;
+    padding: 5px;
   }
 
   .offre-liste {

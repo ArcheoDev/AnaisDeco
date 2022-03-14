@@ -77,17 +77,10 @@ header {
   padding: 16px 32px;
   background: white;
   opacity: 0.5;
-  // display: flex;
-  // flex-flow: row nowrap;
-  // justify-content: space-between;
   line-height: 28px;
 }
 
 .header-logo {
-  // margin-bottom: 0;
-  // display: flex;
-  // flex-flow: row nowrap;
-  // align-items: center;
   float: left;
   padding: 20px;
   margin-bottom: 0px;
@@ -105,8 +98,6 @@ header {
 }
 
 header ul {
-  // display: flex;
-  // flex-flow: row nowrap;
   list-style: none;
   float: right;
   margin: 20px;
@@ -221,6 +212,7 @@ header a {
   border-radius: 250px;
   border: 2px solid #8a716a;
   text-align: center;
+  align-items: center;
   width: 350px;
   height: 350px;
   object-fit: cover;
@@ -386,10 +378,15 @@ footer p {
     order: 2;
   }
 
+  .img-infl {
+    margin: 2px;
+    padding-left: 2px;
+  }
   .img-infl img {
-    padding-top: 20px;
-    height: 300px;
-    // margin: 5px;
+    padding: 0;
+    height: 250px;
+    max-width: 70%;
+    margin: 10px;
   }
 
   // présentation
@@ -404,6 +401,12 @@ footer p {
 
   .presentation-image {
     order: 1;
+  }
+
+  .presentation-image img {
+    width: 300px;
+    height: 300px;
+    padding: 5px;
   }
 
   // prestations
