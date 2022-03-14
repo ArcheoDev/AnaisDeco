@@ -12,6 +12,7 @@ body {
   font-family: "Dosis", sans-serif;
   background: #eee;
   color: #754f44;
+  /* max-width: 1400px; */
 }
 
 p {
@@ -30,7 +31,12 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+}
+
 /* class  */
+
 .container {
   display: block;
   max-width: 1200px;
@@ -48,9 +54,7 @@ a {
   color: white;
 }
 
-/* header */
 .header-barre {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -59,17 +63,13 @@ header {
   padding: 16px 32px;
   background: white;
   opacity: 0.5;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
   line-height: 28px;
 }
 
 .header-logo {
-  margin-bottom: 0;
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
+  float: left;
+  padding: 20px;
+  margin-bottom: 0px;
 }
 
 .header-logo i {
@@ -83,26 +83,33 @@ header {
   font-weight: 300;
 }
 
-header ul {
-  display: flex;
-  flex-flow: row nowrap;
+.navbar {
+  float: right;
+  margin-top: 20px;
+}
+
+.header ul {
   list-style: none;
+  float: right;
+  margin: 20px;
 }
 
 header ul li {
   padding: 16px;
-  font-size: 26px;
+  font-size: 28px;
+  float: left;
 }
 
-header ul li a:hover {
+.header ul li a:hover {
   color: #f1c40f;
 }
 
-header a {
+.header a {
   color: #754f44;
 }
 
 /* Formulaire */
+
 .contact {
   padding: 40px 0px 40px 0px;
   min-height: 100vh;
@@ -185,7 +192,14 @@ textarea {
   color: #1e1e24;
 }
 
+.container form p {
+  color: #1e1e24;
+  font-weight: 700;
+  font-size: 16px;
+}
+
 /* footer */
+
 footer {
   background: white;
   text-align: center;
@@ -201,7 +215,6 @@ footer {
 .footer-texte {
   font-size: 20px;
 }
-
 .footer-info {
   display: flex;
   flex: row;
@@ -218,11 +231,13 @@ footer {
   display: flex;
   flex-direction: column;
 }
+
 .footer-contact a {
   text-decoration: none;
   padding-bottom: 5px;
   font-size: 20px;
 }
+
 .footer-contact i {
   width: 15px;
   padding-right: 28px;
@@ -237,6 +252,7 @@ footer {
 .logo-reseau {
   padding-top: 20px;
 }
+
 .logo-reseau .social {
   padding: 10px;
   font-size: 25px;
@@ -253,4 +269,72 @@ footer p {
   font-size: 12px;
 }
 
-/*# sourceMappingURL=contact.css.map */
+/* Version mobile */
+
+@media (max-width: 768px) {
+  /* header */
+
+  .header-logo {
+    text-align: center;
+    float: none;
+  }
+
+  .header ul {
+    float: none;
+  }
+
+  header ul li {
+    padding: 10px;
+    font-size: 22px;
+  }
+
+  .header-logo a {
+    font-size: 35px;
+  }
+
+  .navbar {
+    float: left;
+  }
+
+  /* formulaire */
+
+  .contact {
+    padding: 25px;
+  }
+
+  .container form h1 {
+    font-size: 25px;
+  }
+
+  .my-20 {
+    font-size: 20px;
+  }
+
+  .cac p {
+    font-size: 20px;
+  }
+
+  .bouton {
+    margin-left: 60px;
+  }
+
+  /* footer */
+
+  .footer-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-titre {
+    margin-top: 20px;
+    font-size: 30px;
+  }
+
+  .footer-texte {
+    font-size: 18px;
+  }
+
+  .footer-contact a {
+    font-size: 18px;
+  }
+}

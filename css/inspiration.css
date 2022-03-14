@@ -12,6 +12,7 @@ body {
   font-family: "Dosis", sans-serif;
   background: #eee;
   color: #754f44;
+  /* max-width: 1400px; */
 }
 
 h3 {
@@ -41,6 +42,7 @@ em {
 }
 
 /* header */
+
 .header-barre {
   display: flex;
   flex-direction: column;
@@ -95,6 +97,8 @@ header ul li {
   color: #754f44;
 }
 
+/* Inspirations */
+
 .titre {
   padding-top: 40px;
   text-align: center;
@@ -135,6 +139,10 @@ header ul li {
   background-color: #9bb291;
 }
 
+/* .carte-insp:hover {
+   transform: scale(1.05);
+} */
+
 .img_insp {
   flex: 2 1;
   height: 320px;
@@ -159,6 +167,7 @@ header ul li {
 }
 
 /* footer */
+
 footer {
   background: white;
   text-align: center;
@@ -174,7 +183,6 @@ footer {
 .footer-texte {
   font-size: 20px;
 }
-
 .footer-info {
   display: flex;
   flex: row;
@@ -191,11 +199,13 @@ footer {
   display: flex;
   flex-direction: column;
 }
+
 .footer-contact a {
   text-decoration: none;
   padding-bottom: 5px;
   font-size: 20px;
 }
+
 .footer-contact i {
   width: 15px;
   padding-right: 28px;
@@ -210,6 +220,7 @@ footer {
 .logo-reseau {
   padding-top: 20px;
 }
+
 .logo-reseau .social {
   padding: 10px;
   font-size: 25px;
@@ -226,7 +237,10 @@ footer p {
   font-size: 12px;
 }
 
+/* Version mobile */
 @media (max-width: 768px) {
+  /* header */
+
   .header-logo {
     text-align: center;
     float: none;
@@ -249,6 +263,8 @@ footer p {
     float: left;
   }
 
+  /* Inspiration */
+
   .bloc-inspiration {
     flex-direction: column;
   }
@@ -260,6 +276,8 @@ footer p {
   .carte-insp {
     width: 100%;
   }
+
+  /* footer */
 
   .footer-info {
     flex-direction: column;
@@ -279,5 +297,3 @@ footer p {
     font-size: 18px;
   }
 }
-
-/*# sourceMappingURL=inspiration.css.map */

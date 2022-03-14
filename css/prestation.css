@@ -1,3 +1,6 @@
+@import "variable";
+@import "keyframe";
+
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +15,7 @@ body {
   font-family: "Dosis", sans-serif;
   background: #eee;
   color: #754f44;
+  /* max-width: 1400px; */
 }
 
 h3 {
@@ -40,8 +44,8 @@ em {
 }
 
 /* header */
+
 .header-barre {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -50,17 +54,13 @@ header {
   padding: 16px 32px;
   background: white;
   opacity: 0.5;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
   line-height: 28px;
 }
 
 .header-logo {
-  margin-bottom: 0;
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
+  float: left;
+  padding: 20px;
+  margin-bottom: 0px;
 }
 
 .header-logo i {
@@ -74,24 +74,32 @@ header {
   font-weight: 300;
 }
 
-header ul {
-  display: flex;
-  flex-flow: row nowrap;
+.navbar {
+  float: right;
+  margin-top: 20px;
+}
+
+.header ul {
   list-style: none;
+  float: right;
+  margin: 20px;
 }
 
 header ul li {
   padding: 16px;
-  font-size: 26px;
+  font-size: 28px;
+  float: left;
 }
 
-header ul li a:hover {
+.header ul li a:hover {
   color: #f1c40f;
 }
 
-header a {
+.header a {
   color: #754f44;
 }
+
+/* Prestations */
 
 .titre {
   padding-top: 40px;
@@ -180,6 +188,8 @@ header a {
   color: white;
 }
 
+/* footer */
+
 footer {
   background: white;
   text-align: center;
@@ -195,7 +205,6 @@ footer {
 .footer-texte {
   font-size: 20px;
 }
-
 .footer-info {
   display: flex;
   flex: row;
@@ -212,11 +221,13 @@ footer {
   display: flex;
   flex-direction: column;
 }
+
 .footer-contact a {
   text-decoration: none;
   padding-bottom: 5px;
   font-size: 20px;
 }
+
 .footer-contact i {
   width: 15px;
   padding-right: 28px;
@@ -231,6 +242,7 @@ footer {
 .logo-reseau {
   padding-top: 20px;
 }
+
 .logo-reseau .social {
   padding: 10px;
   font-size: 25px;
@@ -247,4 +259,73 @@ footer p {
   font-size: 12px;
 }
 
-/*# sourceMappingURL=prestation.css.map */
+/* Version mobile */
+@media (max-width: 768px) {
+  /* header */
+
+  .header-logo {
+    text-align: center;
+    float: none;
+  }
+
+  .header ul {
+    float: none;
+  }
+
+  header ul li {
+    padding: 10px;
+    font-size: 22px;
+  }
+
+  .header-logo a {
+    font-size: 35px;
+  }
+
+  .navbar {
+    float: left;
+  }
+
+  /* prestation */
+
+  .bloc-prestation {
+    flex-direction: column;
+  }
+
+  .carte-presta {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .img_presta {
+    height: 100px;
+  }
+
+  .img_presta img {
+    height: 50%;
+  }
+
+  .carte-bouton {
+    margin: auto;
+    padding-bottom: 160px;
+  }
+
+  /* footer */
+
+  .footer-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-titre {
+    margin-top: 20px;
+    font-size: 30px;
+  }
+
+  .footer-texte {
+    font-size: 18px;
+  }
+
+  .footer-contact a {
+    font-size: 18px;
+  }
+}

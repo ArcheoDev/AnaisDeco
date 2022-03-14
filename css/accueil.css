@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +12,7 @@ body {
   font-family: "Dosis", sans-serif;
   background: #eee;
   color: #754f44;
+  /* max-width: 1400px; */
 }
 
 p {
@@ -44,6 +44,7 @@ em {
 }
 
 /* class  */
+
 .container {
   display: block;
   max-width: 1200px;
@@ -60,6 +61,8 @@ em {
   background: #333;
   color: white;
 }
+
+/* header */
 
 .header-barre {
   min-height: 100vh;
@@ -168,7 +171,6 @@ header ul li {
   display: flex;
   flex-direction: row;
 }
-
 .influence {
   display: flex;
   flex-flow: row nowrap;
@@ -186,6 +188,7 @@ header ul li {
 }
 
 /* Présentation */
+
 #presentation {
   min-height: 100vh;
   display: flex;
@@ -202,6 +205,7 @@ header ul li {
   color: white;
   font-size: 25px;
 }
+
 .presentation-texte h2 {
   font-size: 50px;
   color: white;
@@ -219,6 +223,7 @@ header ul li {
 }
 
 /* Prestations */
+
 #prestation {
   min-height: 100vh;
 }
@@ -273,6 +278,7 @@ header ul li {
 }
 
 /* footer */
+
 footer {
   background: white;
   text-align: center;
@@ -288,7 +294,6 @@ footer {
 .footer-texte {
   font-size: 20px;
 }
-
 .footer-info {
   display: flex;
   flex: row;
@@ -305,11 +310,13 @@ footer {
   display: flex;
   flex-direction: column;
 }
+
 .footer-contact a {
   text-decoration: none;
   padding-bottom: 5px;
   font-size: 20px;
 }
+
 .footer-contact i {
   width: 15px;
   padding-right: 28px;
@@ -324,6 +331,7 @@ footer {
 .logo-reseau {
   padding-top: 20px;
 }
+
 .logo-reseau .social {
   padding: 10px;
   font-size: 25px;
@@ -340,7 +348,10 @@ footer p {
   font-size: 12px;
 }
 
+/* Version mobile */
 @media (max-width: 768px) {
+  /* header */
+
   .header-logo {
     text-align: center;
     float: none;
@@ -358,11 +369,9 @@ footer p {
   .header-logo a {
     font-size: 35px;
   }
-
   .navbar {
     float: left;
   }
-
   .accroche {
     flex-direction: column;
   }
@@ -387,6 +396,8 @@ footer p {
     margin: 10px;
   }
 
+  /* présentation */
+
   #presentation {
     flex-direction: column;
   }
@@ -406,9 +417,39 @@ footer p {
     padding: 5px;
   }
 
+  .accroche-texte p {
+    font-size: 20px;
+  }
+
+  .bouton {
+    font-size: 15px;
+  }
+
+  /* présentation */
+
+  .presentation-texte p {
+    font-size: 20px;
+  }
+
+  .presentation-texte h2 {
+    font-size: 40px;
+  }
+
+  /* prestations */
+
   .offre-liste {
     flex-direction: column;
   }
+
+  .titre {
+    font-size: 40px;
+  }
+
+  .offre-element img {
+    height: 250px;
+  }
+
+  /* footer */
 
   .footer-info {
     flex-direction: column;
@@ -428,5 +469,3 @@ footer p {
     font-size: 18px;
   }
 }
-
-/*# sourceMappingURL=accueil.css.map */
