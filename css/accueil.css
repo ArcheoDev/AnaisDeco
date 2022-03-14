@@ -71,17 +71,13 @@ header {
   padding: 16px 32px;
   background: white;
   opacity: 0.5;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
   line-height: 28px;
 }
 
 .header-logo {
-  margin-bottom: 0;
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
+  float: left;
+  padding: 20px;
+  margin-bottom: 0px;
 }
 
 .header-logo i {
@@ -96,14 +92,15 @@ header {
 }
 
 header ul {
-  display: flex;
-  flex-flow: row nowrap;
   list-style: none;
+  float: right;
+  margin: 20px;
 }
 
 header ul li {
   padding: 16px;
   font-size: 26px;
+  float: left;
 }
 
 header ul li a:hover {
@@ -338,6 +335,28 @@ footer p {
 }
 
 @media (max-width: 768px) {
+  .header-logo {
+    text-align: center;
+    float: none;
+  }
+
+  .header ul {
+    float: none;
+  }
+
+  .header ul li {
+    float: none;
+  }
+
+  .header-logo a {
+    font-size: 35px;
+  }
+
+  .navbar {
+    float: left;
+    max-height: 100vh;
+  }
+
   .accroche {
     flex-direction: column;
   }
@@ -353,7 +372,6 @@ footer p {
   .img-infl img {
     padding-top: 20px;
     height: 300px;
-    margin: 10px;
   }
 
   #presentation {
