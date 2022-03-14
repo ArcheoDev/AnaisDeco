@@ -91,7 +91,12 @@ header {
   font-weight: 300;
 }
 
-header ul {
+.navbar {
+  float: right;
+  margin-top: 20px;
+}
+
+.header ul {
   list-style: none;
   float: right;
   margin: 20px;
@@ -99,15 +104,15 @@ header ul {
 
 header ul li {
   padding: 16px;
-  font-size: 26px;
+  font-size: 28px;
   float: left;
 }
 
-header ul li a:hover {
+.header ul li a:hover {
   color: #f1c40f;
 }
 
-header a {
+.header a {
   color: #754f44;
 }
 
@@ -199,7 +204,7 @@ header a {
 }
 .presentation-texte h2 {
   font-size: 50px;
-  color: #1e1e24;
+  color: white;
 }
 
 .presentation-image img {
@@ -231,7 +236,7 @@ header a {
 .titre {
   padding-top: 40px;
   font-size: 50px;
-  color: #1e1e24;
+  color: white;
   text-align: center;
 }
 
@@ -345,8 +350,9 @@ footer p {
     float: none;
   }
 
-  .header ul li {
-    float: none;
+  header ul li {
+    padding: 10px;
+    font-size: 22px;
   }
 
   .header-logo a {
@@ -355,7 +361,6 @@ footer p {
 
   .navbar {
     float: left;
-    max-height: 100vh;
   }
 
   .accroche {
@@ -388,6 +393,7 @@ footer p {
 
   .presentation-texte {
     order: 2;
+    padding: 20px 20px 0 20px;
   }
 
   .presentation-image {
@@ -411,6 +417,15 @@ footer p {
 
   .footer-titre {
     margin-top: 20px;
+    font-size: 30px;
+  }
+
+  .footer-texte {
+    font-size: 18px;
+  }
+
+  .footer-contact a {
+    font-size: 18px;
   }
 }
 

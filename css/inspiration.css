@@ -42,7 +42,6 @@ em {
 
 /* header */
 .header-barre {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -51,17 +50,13 @@ header {
   padding: 16px 32px;
   background: white;
   opacity: 0.5;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
   line-height: 28px;
 }
 
 .header-logo {
-  margin-bottom: 0;
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
+  float: left;
+  padding: 20px;
+  margin-bottom: 0px;
 }
 
 .header-logo i {
@@ -75,22 +70,28 @@ header {
   font-weight: 300;
 }
 
-header ul {
-  display: flex;
-  flex-flow: row nowrap;
+.navbar {
+  float: right;
+  margin-top: 20px;
+}
+
+.header ul {
   list-style: none;
+  float: right;
+  margin: 20px;
 }
 
 header ul li {
   padding: 16px;
-  font-size: 26px;
+  font-size: 28px;
+  float: left;
 }
 
-header ul li a:hover {
+.header ul li a:hover {
   color: #f1c40f;
 }
 
-header a {
+.header a {
   color: #754f44;
 }
 
@@ -223,6 +224,60 @@ footer p {
   margin-bottom: 0;
   padding-top: 20px;
   font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .header-logo {
+    text-align: center;
+    float: none;
+  }
+
+  .header ul {
+    float: none;
+  }
+
+  header ul li {
+    padding: 10px;
+    font-size: 22px;
+  }
+
+  .header-logo a {
+    font-size: 35px;
+  }
+
+  .navbar {
+    float: left;
+  }
+
+  .bloc-inspiration {
+    flex-direction: column;
+  }
+
+  .texte-insp h4 {
+    font-size: 16px;
+  }
+
+  .carte-insp {
+    width: 100%;
+  }
+
+  .footer-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-titre {
+    margin-top: 20px;
+    font-size: 30px;
+  }
+
+  .footer-texte {
+    font-size: 18px;
+  }
+
+  .footer-contact a {
+    font-size: 18px;
+  }
 }
 
 /*# sourceMappingURL=inspiration.css.map */
