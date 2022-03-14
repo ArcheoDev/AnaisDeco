@@ -296,9 +296,9 @@ footer p {
     flex-direction: column;
   }
 
-  .img_presta {
+  /* .img_presta {
     height: 100px;
-  }
+  } */
 
   .img_presta img {
     height: 50%;

@@ -178,7 +178,7 @@ header ul li {
 
 .img-infl {
   margin: 5px;
-  padding-left: 10px;
+  padding-left: 5px;
 }
 
 .img-infl img {
@@ -385,7 +385,7 @@ footer p {
   }
 
   .img-infl {
-    margin: 2px;
+    /* margin: 2px; */
     padding-left: 2px;
   }
 
