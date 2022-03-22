@@ -386,14 +386,18 @@ footer p {
     order: 2;
   }
 
-  .img-infl {
-    padding-left: 2px;
+  .influence {
+    display: flex;
+    flex-flow: row nowrap;
+    /* gap: 5px; */
   }
 
   .img-infl img {
     padding: 0;
     height: 250px;
-    width: 58%;
+    width: 65px;
+    margin: 5px 0 5px 0;
+    padding: 5px;
   }
 
   /* présentation */
